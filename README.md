@@ -1,18 +1,18 @@
 # jni-demo
 1. 编写Java类, 定义native方法, 如: com.nexusy.jni.JniService.java
 
-2. 创建C/C++ 头文件, 进入到JniService.java所在目录
+2. 创建C/C++ 头文件, 进入到JniService.java所属package所在目录, 例如:com文件夹所在目录
 
    Java 9及之前版本: 
 
    ```shell
-   javah . JniService
+   javah com.nexusy.jni.JniService
    ```
 
    Java 10及之后版本: 
 
    ```shell
-   javac -h . JniService
+   javac -h . com/nexusy/jni/JniService.java
    ```
 
    
